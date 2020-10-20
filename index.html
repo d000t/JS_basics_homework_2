@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS basics 2</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <form>
+        <p id="title1">Задача 1</p>
+        <p>Длина</p>
+        <input type="number" id="length" min="1" max="1000"onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <p>Ширина</p>
+        <input type="number" id="width" min="1" max="1000" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <p>Высота</p>
+        <input type="number" id="height" min="1" max="1000" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <p></p>
+        <input type="submit" id="submit1" value="Рассчитать" onclick="one()">
+        <p id="title2">Задача 2</p>
+        <input type="number" id="A1" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="number" id="A2" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="number" id="A3" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="number" id="B1" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="number" id="B2" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="number" id="B3" min="1" max="100" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="submit" id="submit2" value="Посчитать прибыль" onclick="two()">
+        <p id="title3">Задача 3</p>
+        <input type="number" id="ticket_number" min="0" max="999999" onkeydown="javascript: return ((event.keyCode>0o7)&&(event.keyCode<58));">
+        <input type="submit" id="submit3" value="Проверить номер билета" onclick="three()">
+        <p></p>
+        <input type="submit" class="exercises_4" value="№4.1" onclick="four_one()">
+        <input type="submit" class="exercises_4" value="№4.2" onclick="four_two()">
+        <input type="submit" class="exercises_4" value="№4.3" onclick="four_three()">
+        <input type="submit" class="exercises_4" value="№4.4" onclick="four_four()">
+        <input type="submit" class="exercises_4" value="№4.5" onclick="four_five()">
+        <input type="submit" class="exercises_4" value="№4.6" onclick="four_six()">
+        <input type="submit" class="exercises_4" value="№4.7" onclick="four_seven()">
+        <input type="submit" class="exercises_4" value="№4.8" onclick="four_eight()">
+        <input type="submit" class="exercises_4" value="№4.9" onclick="four_nine()">
+    </form>
+
+    <script src="./app/main.js"></script>
+</body>
+</html>
